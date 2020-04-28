@@ -1,0 +1,22 @@
+* {
+    border-width: 3px;
+    border-color: rgb(228, 227, 227);
+}
+
+body{
+    background-color: rgb(228, 227, 227);
+}
+
+.btn{
+background-color: gray;
+    border-color: gray;
+    color: white;
+}
+
+.btn:hover{
+ color: rgb(255,238,0);  
+}
+
+div{
+margin: 10px;
+}

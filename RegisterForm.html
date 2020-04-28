@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>TrackIT</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="trackcss.css" />
+</head>
+
+<body>
+
+    <form action="http://14.139.252.25/final_track/registerInfo.php" method="POST">
+
+        <input type="text" name="userid" id="userid" placeholder="User-ID">
+        <br>
+        <input type="button" id="start" class="btn" value="START">
+        <input type="button" id="stop" class="btn" value="STOP">
+        <input type="button" id="quit" class="btn" value="QUIT">
+
+        <input type="hidden" name="source" id="s" value="">
+        <input type="hidden" name="sourcetitle" id="stitle" value="">
+        <input type="hidden" name="destination" id="d" value="">
+        <input type="hidden" name="destinationtitle" id="dtitle" value="">
+        <input type="hidden" name="other" id="q" value="">
+        <input type="hidden" name="othertitle" id="qtitle" value="">
+
+
+        <!--this field stores the status value obtained from popup.js file
+            START=0
+            STOP=1
+            QUIT=2
+            status is required to identify which button was clicked
+        -->
+        <input type="hidden" name="status" id="st">
+
+        <br>
+      <center>
+
+        <input type="submit" class="btn" value="SUBMIT">
+      </center>
+
+    </form>
+
+    <script src="popup.js">
+    </script>
+
+</body>
+
+</html>
